@@ -27,8 +27,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="md:top-0 md:left-64 py-2 flex justify-center sm:justify-end md:w-[100%] bg-testMain">
-        <ul className="flex flex-row items-center gap-10 text-xl text-txtDarkerWhite justify-end">
+      <nav className="sm:flex sm:top-0 sm:left-64 sm:w-[100%] hidden sm:justify-end bg-backdrop">
+        <ul className="flex flex-row items-center gap-10 text-xl text-txtDarkerWhite">
           {menu.map(m => (
             <li
               key={m.name}

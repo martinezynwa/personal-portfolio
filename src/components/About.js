@@ -21,7 +21,7 @@ const About = () => {
     <>
       <div id="about" className="flex flex-col lg:flex-row mt-8 lg:mt-20 gap-8">
         <div className="flex flex-col basis-2/3">
-          <h2 className="mb-8 font-semibold text-4xl lg:text-5xl">About</h2>
+          <h2 className="mb-8 font-semibold text-4xl lg:text-5xl">About me</h2>
           <div className="flex flex-col gap-4 text-txtDarkerWhite">
             <p className="">
               Alte magna sem, convallis ac ipsum quis, sodales volutpat nunc.
@@ -56,11 +56,11 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col max-w-2xl lg:basis-1/3 items-center mx-2 lg:mx-auto p-6 gap-6 rounded-2xl bg-container">
+        <div className="flex flex-col max-w-2xl lg:basis-1/3 items-center sm:mx-2 lg:mx-auto p-6 gap-6 rounded-2xl sm:text-base text-lg bg-container">
           <div className="flex flex-col">
-            <h3 className="mb-4 text-xl font-semibold">Experience with:</h3>
+            <h3 className="mb-4 font-semibold text-xl">Experience with:</h3>
             <div className="flex flex-row gap-12 text-txtDarkerWhite">
-              <ul className="-space-y-1">
+              <ul className="-space-y-1 -ml-2">
                 <Knowledge name="Javascript" type="knowledge" />
                 <Knowledge name="React" type="knowledge" />
                 <Knowledge name="NodeJS" type="knowledge" />
@@ -73,7 +73,7 @@ const About = () => {
             </div>
           </div>
           <div className="-ml-4">
-            <h3 className="mb-4 text-xl font-semibold">Want to learn:</h3>
+            <h3 className="mb-4 font-semibold text-xl">Want to learn:</h3>
             <ul className='text-txtDarkerWhite'>
               <Knowledge name="Improve current experience" type="study" />
               <Knowledge name="Typescript" type="study" />
