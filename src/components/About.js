@@ -26,15 +26,12 @@ const About = () => {
             <h4 className="">
               Alte magna sem, convallis ac ipsum quis, sodales volutpat nunc.
               Aenean a pellentesque mi. Cras consectetur eu lorem vitae semper.
-              Aliquam maximus magna quis mattis posuere. Nam sollicitudin augue
-              non odio sodales, quis malesuada eros semper. Ut gravida vehicula
-              ultricies.
+              Aliquam maximus.
             </h4>
             <h4>
               Nulla vitae congue dolor. Pellentesque dictum sem sem, nec
-              elementum nisi interdum in. Donec vulputate sodales turpis, a
-              vulputate ante imperdiet scelerisque. Pellentesque iaculis
-              interdum orci in{' '}
+              elementum nisi interdum in. Donec, a
+              vulputate ante imperdiet scelerisque.{' '}
               <span>
                 <a
                   className="text-highlighted font-semibold"
