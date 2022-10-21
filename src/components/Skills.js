@@ -50,7 +50,7 @@ const Skills = () => {
     {
       logo: <SiCss3 />,
       id: '2',
-      name: 'HTML/CSS',
+      name: 'HTML/CSS/Tailwind',
       details:
         'Suspendisse id feugiat lorem, eu porta mauris. Nulla dictum elit ac quam aliquam, quis condimentum ligula consectetur. Fusce in nisi sem. In fermentum euismod facilisis. Ut a fringilla lorem.',
     },
@@ -66,22 +66,22 @@ const Skills = () => {
   return (
     <>
       <>
-        <div id="skills" className="mb-4">
-          <h2 className="mb-8 font-semibold text-4xl lg:text-5xl">Skills</h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div id="skills" className="margin-container">
+          <h2>Skills</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-2">
             {skills.map((s, i) => (
               <div
                 key={i}
-                className={`flex flex-col p-4 my-1 space-y-3 border-l-4 border-button bg-container rounded-sm rounded-l-none ${
+                className={`flex flex-col p-4 my-1 space-y-3 border-l-4 border-buttonColor bg-containerColor rounded-sm rounded-l-none ${
                   skills.length % 2 === 0
                     ? ''
                     : 'lg:last:relative lg:last:left-2/4'
                 }`}>
                 <div className="flex flex-row gap-3 items-center mb-2">
                   <div className="text-4xl">{s.logo}</div>
-                  <h2 className="text-xl">{s.name}</h2>
+                  <h3>{s.name}</h3>
                 </div>
-                <p className="text-sm md:text-base text-txtDarkerWhite">{s.details}</p>
+                <h4>{s.details}</h4>
               </div>
             ))}
           </div>

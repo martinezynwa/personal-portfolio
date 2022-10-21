@@ -21,7 +21,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="p-6 text-txtDarkerWhite">
+      <div className="p-6 text-darkerWhite">
         <ul className="flex flex-row gap-6 mt-2 xl:mt-16 mb-4 text-2xl w-max mx-auto cursor-pointer">
           {links.map(l => (
             <li key={l.name} className="hover:text-white">

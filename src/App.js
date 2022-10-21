@@ -9,7 +9,7 @@ import './style.css'
 const App = () => {
   return (
     <>
-      <div className="flex flex-col px-4 sm:px-16 max-w-screen-xl mx-auto font-poppins">
+      <div className="page">
         <Navbar />
         <Intro />
         <About />

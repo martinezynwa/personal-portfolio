@@ -4,10 +4,35 @@
 @tailwind components;
 
 @layer base {
-
   html,
   body,
   #root {
-    @apply bg-backdrop cursor-default text-white;
+    @apply bg-backdrop cursor-default text-darkerWhite font-poppins;
+  }
+
+  h1 {
+    @apply text-[44px] font-semibold text-white;
+  }
+
+  h2 {
+    @apply text-headMobile sm:text-head font-semibold text-white;
+  }
+
+  h3 {
+    @apply text-containerHeadMobile sm:text-containerHead font-semibold text-white;
+  }
+
+  h4 {
+    @apply text-containerTextMobile sm:text-containerText text-darkerWhite;
+  }
+}
+
+@layer components {
+  .page {
+    @apply flex flex-col px-4 sm:px-16 max-w-screen-xl mx-auto;
+  }
+
+  .margin-container {
+    @apply my-5;
   }
 }

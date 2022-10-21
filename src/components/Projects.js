@@ -43,6 +43,7 @@ const Projects = () => {
         'Tailwind CSS',
         'Axios',
         'Rest API',
+        'Async/Await',
         'Spotify OAuth',
         'Netlify',
         'Fly.io',
@@ -54,10 +55,10 @@ const Projects = () => {
     },
     {
       name: 'My portfolio website',
-      description: 'The site you\'re currently looking at.',
+      description: "The site you're currently looking at.",
       stack: ['Javascript', 'React', 'HTML', 'Tailwind CSS', 'Netlify'],
-      link: 'TBA',
-      github: 'TBA',
+      link: 'https://mg-portfolioweb.netlify.app/',
+      github: 'https://github.com/martinezynwa/personal-portfolio',
       imgDesktop: p3desktop,
       imgMobile: p3mobile,
     },
@@ -69,15 +70,15 @@ const Projects = () => {
 
   return (
     <>
-      <div id="projects" className="my-6">
-        <h2 className="font-semibold text-4xl lg:text-5xl ">Projects</h2>
+      <div className='margin-container' id="projects">
+        <h2>Projects</h2>
         {projects.map(p => (
           <div
             key={p.name}
-            className="flex flex-col lg:flex-row lg:pl-1 lg:pr-7 lg:py-7 pt-2 px-4 pb-6 my-6 justify-between bg-container rounded-lg ">
+            className="flex flex-col lg:flex-row lg:pr-3 py-1 pb-6 my-5 px-4 lg:px-0 justify-between bg-containerColor rounded-2xl">
             <div className="flex flex-col lg:basis-2/4 lg:ml-6 my-4">
-              <h2 className="mb-2 lg:mb-1 text-2xl font-semibold">{p.name}</h2>
-              <h3 className="mb-4 lg:mb-8 text-gray-400">{p.description}</h3>
+              <h3 className="mb-2 lg:mb-1">{p.name}</h3>
+              <h4 className="mb-4 lg:mb-8">{p.description}</h4>
               <div className="flex flex-wrap gap-2 mb-6 lg:mb-8 text-sm">
                 {p.stack.map(s => (
                   <Stack key={s} name={s} />
@@ -85,7 +86,11 @@ const Projects = () => {
               </div>
               <div className="flex flex-row gap-3 lg:justify-start text-gray-50">
                 <a
-                  className="p-2 rounded-md bg-button hover:bg-btnHover"
+                  className={`${
+                    p.name === 'My portfolio website'
+                      ? 'hidden'
+                      : 'p-2 rounded-md bg-buttonColor hover:bg-buttonHoverColor'
+                  } `}
                   href={p.link}
                   target="_blank"
                   rel="noreferrer"
@@ -93,7 +98,7 @@ const Projects = () => {
                   Visit Demo Site
                 </a>
                 <a
-                  className="p-2 rounded-md bg-button hover:bg-btnHover hover:text-white"
+                  className="p-2 rounded-md bg-buttonColor hover:bg-buttonHoverColor hover:text-white"
                   href={p.github}
                   target="_blank"
                   rel="noreferrer"
@@ -102,15 +107,15 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-            <div className="relative flex items-center max-w-md m-auto lg:p-4 lg:mx-0 lg:hover:scale-110 lg:transition duration-1000">
+            <div className="relative flex items-center max-w-md m-auto lg:p-4 lg:mx-0 lg:hover:scale-105 lg:transition duration-1000">
               <img
                 src={p.imgDesktop}
-                className="relative rounded-lg border-[7px] border-borders"
+                className="relative rounded-lg border-[7px] border-borderColor"
                 alt=""
               />
               <img
                 src={p.imgMobile}
-                className="absolute -bottom-2 -right-2 lg:-bottom-1 lg:right-1 w-[20%] rounded-lg border-[4px] border-borders"
+                className="absolute -bottom-2 -right-2 lg:-bottom-1 lg:right-1 w-[20%] rounded-lg border-[4px] border-borderColor"
                 alt=""
               />
             </div>
