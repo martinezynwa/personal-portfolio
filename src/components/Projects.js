@@ -56,7 +56,7 @@ const Projects = () => {
         'Netlify',
         'Fly.io',
       ],
-      link: 'https://superb-douhua-a25458.netlify.app/',
+      link: 'https://new-releases-tracker.netlify.app/',
       github: 'https://github.com/martinezynwa/spotifyNewReleases',
       imgDesktop: p2desktop,
       imgMobile: p2mobile,
