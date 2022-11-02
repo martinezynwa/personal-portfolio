@@ -7,7 +7,7 @@
   html,
   body,
   #root {
-    @apply bg-backdrop cursor-default text-darkerWhite font-poppins;
+    @apply bg-backdrop cursor-default text-darkerWhite font-poppins scroll-smooth;
   }
 
   h1 {
@@ -24,6 +24,10 @@
 
   h4 {
     @apply text-containerTextMobile sm:text-containerText text-darkerWhite;
+  }
+
+  h5 {
+    @apply text-containerTextSmallerMobile sm:text-containerTextSmaller text-darkerWhite;
   }
 }
 

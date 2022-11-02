@@ -1,4 +1,9 @@
-import { FaLinkedinIn, FaInstagram, FaGithub } from 'react-icons/fa'
+import {
+  FaLinkedinIn,
+  FaInstagram,
+  FaGithub,
+  FaChevronCircleUp,
+} from 'react-icons/fa'
 
 const Footer = () => {
   const links = [
@@ -21,8 +26,8 @@ const Footer = () => {
 
   return (
     <>
-      <div className="p-6 text-darkerWhite">
-        <ul className="flex flex-row gap-6 mt-2 xl:mt-16 mb-4 text-2xl w-max mx-auto cursor-pointer">
+      <div className="pb-6 text-darkerWhite">
+        <ul className="flex flex-row gap-6 mb-4 text-3xl w-max mx-auto cursor-pointer">
           {links.map(l => (
             <li key={l.name} className="hover:text-white">
               <a href={l.href} target="_blank" rel="noreferrer" alt={l.name}>
@@ -30,6 +35,11 @@ const Footer = () => {
               </a>
             </li>
           ))}
+          <li className="hover:text-white">
+            <a href="#nav" alt="top" onClick={() => window.scrollTo(0, 0)}>
+              <FaChevronCircleUp />
+            </a>
+          </li>
         </ul>
         <div className="w-max mx-auto text-xs">Ⓒ 2022 Martin Gnebus</div>
       </div>

@@ -1,14 +1,13 @@
 ### CHANGELOG
 
 
-### TBD
-- [ ] smoother transition when moving to segments via buttons
-- [ ] scroll back to top feature
-- [ ] some things may be placed into #root
-- [ ] sort props in classnames
-- [ ] lorem to real texts
-- [ ] update preview pictures of projects
-- [ ] dark/light mode
+### 0.12
+- [x] scroll back to top feature
+- [x] smoother transition when moving to segments via buttons
+- [x] some things may be placed into #root
+- [x] lorem to real texts
+- [x] update preview pictures of projects
+- [x] details for each project rather than skills container
 
 ### 0.11
 - [x] footer icons to links

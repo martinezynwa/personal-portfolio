@@ -4,7 +4,6 @@ const Navbar = () => {
   const menu = [
     { name: 'About', href: '#about' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Skills', href: '#skills' },
   ]
 
   const links = [
@@ -38,11 +37,7 @@ const Navbar = () => {
           ))}
           {links.map(l => (
             <li key={l.name} className="hidden sm:block hover:text-white">
-              <a
-                href={l.href}
-                target="_blank"
-                rel="noreferrer"
-                alt={l.name}>
+              <a href={l.href} target="_blank" rel="noreferrer" alt={l.name}>
                 {l.icon}
               </a>
             </li>

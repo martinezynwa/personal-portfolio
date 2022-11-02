@@ -4,13 +4,17 @@ import p2desktop from '../assets/p2desktop.jpg'
 import p2mobile from '../assets/p2mobile.jpg'
 import p3desktop from '../assets/p3desktop.jpg'
 import p3mobile from '../assets/p3mobile.jpg'
+import Experience from './Experience'
 
 const Projects = () => {
   const projects = [
     {
+      id: '1',
       name: 'Budget Management',
       description:
-        'Personal app for tracking expenses with various statistics and history logs.',
+        'Simple finance app for personal purposes, tracking expenses and showing various statistics. ',
+      experience:
+        'First real try with everything. Using Javascript for logic, building connection between client and server, creating types, queries and mutations when manipulating with data in database. Implementing Google Auth. Using standard React hooks as well as building custom ones. Realizing how to properly handle state within context and what is it for. Trying to build CSS according to best practices and later re-factoring to Tailwind due to a better experience. Finally building dark/light mode.',
       stack: [
         'Javascript',
         'React',
@@ -19,10 +23,12 @@ const Projects = () => {
         'GraphQL',
         'HTML',
         'CSS',
+        'Tailwind CSS',
         'Rest API',
         'Google Auth',
         'Netlify',
         'Heroku',
+        'Fly.io',
       ],
       link: 'https://budget-mgmt-1.netlify.app/',
       github: 'https://github.com/martinezynwa/budgetmgmt',
@@ -30,16 +36,18 @@ const Projects = () => {
       imgMobile: p1mobile,
     },
     {
+      id: '2',
       name: 'New Releases Tracker',
       description:
-        'App that is checking newly released music of your followed artists on Spotify daily and is automatically assigning new songs into specified playlist of your choice.',
+        'App that is checking newly released music of your followed artists on Spotify daily and is automatically assigning their new songs into specified playlist of your choice.',
+      experience:
+        'Handling bigger amount of data received from Spotify API and creating appropriate logic to parse the data in the most efficient way. Implementing Async/Await functions on both client and server in order to maintain the data flow properly. Error handling and logging for a better visibility over errored responses or requests from Spotify. Creating a custom job to run specific tasks on daily basis. Getting to know Tailwind CSS and Spotify OAuth.',
       stack: [
         'Javascript',
         'React',
         'MongoDB',
         'NodeJS',
         'Express',
-        'HTML',
         'Tailwind CSS',
         'Axios',
         'Rest API',
@@ -54,8 +62,11 @@ const Projects = () => {
       imgMobile: p2mobile,
     },
     {
+      id: '3',
       name: 'My portfolio website',
       description: "The site you're currently looking at.",
+      experience:
+        'Trying to build the best possible responsive web experience with current skills. Figuring out how to present my knowledge.',
       stack: ['Javascript', 'React', 'HTML', 'Tailwind CSS', 'Netlify'],
       link: 'https://mg-portfolioweb.netlify.app/',
       github: 'https://github.com/martinezynwa/personal-portfolio',
@@ -70,15 +81,16 @@ const Projects = () => {
 
   return (
     <>
-      <div className='margin-container' id="projects">
+      <div className="margin-container" id="projects">
         <h2>Projects</h2>
         {projects.map(p => (
           <div
             key={p.name}
             className="flex flex-col lg:flex-row lg:pr-3 py-1 pb-6 my-5 px-4 lg:px-0 justify-between bg-containerColor rounded-2xl">
-            <div className="flex flex-col lg:basis-2/4 lg:ml-6 my-4">
+            <div className="flex flex-col lg:basis-3/5 lg:ml-6 my-4">
               <h3 className="mb-2 lg:mb-1">{p.name}</h3>
-              <h4 className="mb-4 lg:mb-8">{p.description}</h4>
+              <h4 className="mb-2">{p.description}</h4>
+              <Experience details={p.experience} />
               <div className="flex flex-wrap gap-2 mb-6 lg:mb-8 text-sm">
                 {p.stack.map(s => (
                   <Stack key={s} name={s} />
@@ -98,7 +110,7 @@ const Projects = () => {
                   Visit Demo Site
                 </a>
                 <a
-                  className="p-2 rounded-md bg-buttonColor hover:bg-buttonHoverColor hover:text-white"
+                  className="p-2 rounded-md bg-buttonColor hover:bg-buttonHoverColor"
                   href={p.github}
                   target="_blank"
                   rel="noreferrer"
