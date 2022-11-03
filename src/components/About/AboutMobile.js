@@ -21,18 +21,17 @@ const AboutMobile = () => {
                     projects
                   </a>
                 </span>{' '}
-                as well as learn some frameworks and I hope to continue with
-                many more. With every new project I always want to strengthen my
-                current skills as well as explore new frameworks and
-                technologies.
+                as well as learn some frameworks and I'm planning to follow-up
+                with many more. With every new project I'm aiming to strengthen
+                my current skills and explore new frameworks and technologies.
               </h4>
               <ExperienceInfo />
               <h2 id="about" className="lg:mt-20">
                 My story
               </h2>
               <h4>
-                I've been doing some programming for a year or two, however this
-                spring I ran into a course called{' '}
+                I've been doing some programming for a year or two, however in
+                early 2022 I ran into a course called{' '}
                 <a
                   className="text-highlighted font-semibold hover:text-hoverHighlighted"
                   href="https://fullstackopen.com/en/"
@@ -41,13 +40,14 @@ const AboutMobile = () => {
                   Full Stack Open
                 </a>
                 , which dives deeper into modern web development and since I've
-                somehow always been interested in getting to know more abut this
-                topic, I signed up.
+                somehow always been interested in getting to know more about
+                this topic, I signed up.
               </h4>
               <h4>
-                Course gave me an understanding how web apps are built and after
-                completing most of the chapters I felt I'm ready to bring my
-                ideas into the real world.
+                Course gave me an understanding what are the prerequisities to
+                have in order to build such web app and after completing most of
+                the chapters I felt I'm ready to bring my ideas into the real
+                world.
               </h4>
               <h4>
                 It took some time before I was ready to create something

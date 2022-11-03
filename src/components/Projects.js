@@ -45,8 +45,8 @@ const Projects = () => {
       stack: [
         'Javascript',
         'React',
-        'MongoDB',
         'NodeJS',
+        'MongoDB',
         'Express',
         'Tailwind CSS',
         'Axios',

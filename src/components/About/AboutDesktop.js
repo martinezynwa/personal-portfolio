@@ -22,18 +22,19 @@ const AboutDesktop = () => {
                   Full Stack Open
                 </a>
                 , which dives deeper into modern web development and since I've
-                somehow always been interested in getting to know more abut this
-                topic, I signed up.
+                somehow always been interested in getting to know more about
+                this topic, I signed up.
               </h4>
               <h4>
-                Course gave me an understanding how web apps are built and after
-                completing most of the chapters I felt I'm ready to bring my
-                ideas into the real world. It took some time before I was ready
-                to create something functional, as escaping the tutorial world
-                and actually doing things on your own is something different,
-                however I really enjoyed the process of learning how to build
-                every single piece and realized that this is something that I'd
-                love to do profesionally one day.
+                Course gave me an understanding what are the prerequisities to
+                have in order to build such web app and after completing most of
+                the chapters I felt I'm ready to bring my ideas into the real
+                world. It took some time before I was ready to create something
+                functional, as escaping the tutorial world and actually doing
+                things on your own is something different, nevertheless I really
+                enjoyed the process of learning how to build every single piece
+                and realized that this is something that I'd love to do
+                profesionally one day.
               </h4>
               <h4>
                 There are currently three{' '}
@@ -44,9 +45,9 @@ const AboutDesktop = () => {
                     projects
                   </a>
                 </span>{' '}
-                in my portfolio and I have ideas for many more. With every new
-                project I'm hoping to strenghten my current skills as well as
-                explore new frameworks and technologies.
+                in my portfolio and I'm planning to follow-up with many more.
+                With every new project I'm aiming to strengthen my current
+                skills and explore new frameworks and technologies.
               </h4>
             </div>
           </div>

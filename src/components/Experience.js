@@ -5,8 +5,8 @@ const Experience = ({ details }) => {
 
   if (!show) {
     return (
-      <h2 className="w-fit -ml-1 mb-2 p-1 rounded-lg text-white sm:text-darkerWhite text-containerTextSmaller hover:text-white cursor-pointer" onClick={() => setShow(!show)}>
-        Click to see what I learned
+      <h2 className="w-fit -ml-1 mb-3 p-1 rounded-lg text-white sm:text-darkerWhite text-containerTextSmaller hover:text-white cursor-pointer" onClick={() => setShow(!show)}>
+        Click here to see what I learned
       </h2>
     )
   }

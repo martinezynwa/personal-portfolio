@@ -37,7 +37,7 @@ const ExperienceInfo = () => {
             </ul>
           </div>
         </div>
-        <div className="-ml-6 sm:-ml-8">
+        <div className="-ml-8">
           <h3 className="mb-4 font-semibold text-xl">Want to learn:</h3>
           <ul className="text-darkerWhite">
             <Knowledge name="Improve current skills" type="study" />
