@@ -663,8 +663,8 @@ h5{
   margin-left: -0.25rem;
 }
 
-.mb-2{
-  margin-bottom: 0.5rem;
+.mb-3{
+  margin-bottom: 0.75rem;
 }
 
 .mb-4{
@@ -683,6 +683,10 @@ h5{
   margin-bottom: 3.5rem;
 }
 
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
 .mb-6{
   margin-bottom: 1.5rem;
 }
@@ -691,20 +695,8 @@ h5{
   margin-left: -0.5rem;
 }
 
-.-ml-6{
-  margin-left: -1.5rem;
-}
-
 .-ml-8{
   margin-left: -2rem;
-}
-
-.-ml-9{
-  margin-left: -2.25rem;
-}
-
-.mb-3{
-  margin-bottom: 0.75rem;
 }
 
 .flex{
@@ -1053,18 +1045,6 @@ h5{
 
   .sm\:mt-2{
     margin-top: 0.5rem;
-  }
-
-  .sm\:-ml-8{
-    margin-left: -2rem;
-  }
-
-  .sm\:mb-2{
-    margin-bottom: 0.5rem;
-  }
-
-  .sm\:mb-3{
-    margin-bottom: 0.75rem;
   }
 
   .sm\:block{
