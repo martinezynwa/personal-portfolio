@@ -101,7 +101,7 @@ const Projects = () => {
               <div className="flex flex-row gap-3 lg:justify-start text-gray-50">
                 <a
                   className={`${
-                    p.name === 'My portfolio website'
+                    p.name !== 'New Releases Tracker'
                       ? 'hidden'
                       : 'p-2 rounded-md bg-buttonColor hover:bg-buttonHoverColor'
                   } `}
