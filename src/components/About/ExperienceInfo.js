@@ -25,15 +25,15 @@ const ExperienceInfo = () => {
           <div className="flex flex-row gap-16 text-darkerWhite">
             <ul className="-space-y-1 -ml-2">
               <Knowledge name="Javascript" type="knowledge" />
+              <Knowledge name="Typescript" type="knowledge" />
               <Knowledge name="React" type="knowledge" />
               <Knowledge name="NodeJS" type="knowledge" />
-              <Knowledge name="GraphQL" type="knowledge" />
             </ul>
             <ul className="-space-y-1">
+              <Knowledge name="GraphQL" type="knowledge" />
               <Knowledge name="HTML/CSS" type="knowledge" />
               <Knowledge name="Tailwind" type="knowledge" />
               <Knowledge name="MongoDB" type="knowledge" />
-              <Knowledge name="SAP ABAP" type="knowledge" />
             </ul>
           </div>
         </div>
@@ -41,7 +41,7 @@ const ExperienceInfo = () => {
           <h3 className="mb-4 font-semibold text-xl">Want to learn:</h3>
           <ul className="text-darkerWhite">
             <Knowledge name="Improve current skills" type="study" />
-            <Knowledge name="Typescript" type="study" />
+            <Knowledge name="NextJS" type="study" />
             <Knowledge name="React Native" type="study" />
             <Knowledge name="Every modern tech stack :)" type="study" />
           </ul>
